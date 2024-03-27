@@ -6,7 +6,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float runSpeed = 1.0f;
-    public float jumSpeed = 3.0f;
+    public float jumpSpeed = 3.0f;
     private Rigidbody2D _rigidbody;
 
     // Start is called before the first frame update
@@ -30,6 +30,10 @@ public class Player : MonoBehaviour
         else
         {
             _rigidbody.velocity = new Vector2(0, _rigidbody.velocity.y);
+        }
+        if (Input.GetKey("space") && CheckGround.isGround)
+        {
+            _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, jumpSpeed);
         }
     }
 }
