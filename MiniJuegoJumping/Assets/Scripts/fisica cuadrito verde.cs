@@ -5,9 +5,9 @@ using UnityEngine;
 public class ReducirCrecerAlSaltar : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float shrinkAmount = 0.5f; // Cantidad de encogimiento
-    public float growAmount = 2f; // Cantidad de crecimiento
-    public float duration = 0.5f; // Duración del encogimiento y crecimiento
+    public float shrinkAmount = 0.8f; // Cantidad de encogimiento
+    public float growAmount = 1f; // Cantidad de crecimiento
+    public float duration = 0.8f; // Duración del encogimiento y crecimiento
 
     private Vector3 originalScale; // Escala original del cuadrado
     private bool isShrinking = false; // Estado de encogimiento
