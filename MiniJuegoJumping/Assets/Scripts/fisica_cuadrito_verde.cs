@@ -17,7 +17,7 @@ public class fisica_cuadrito_verde : MonoBehaviour
         originalScale = transform.localScale; // Guarda la escala original del cuadrado
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player")) // Si el personaje colisiona con el cuadrado
         {
