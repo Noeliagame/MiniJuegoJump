@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &106670215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5960945369696824364, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
+  m_PrefabInstance: {fileID: 1134056827}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &366084619 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4363198082916841087, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
@@ -220,6 +225,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &875465178 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5960945369696824364, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
+  m_PrefabInstance: {fileID: 1315551374}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &929414661
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,10 +317,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform_Jump (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5960945369696824364, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5960945369696824364, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2136952350}
   m_SourcePrefab: {fileID: 100100000, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
 --- !u!4 &1007292317 stripped
 Transform:
@@ -369,16 +386,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform_Jump (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5960945369696824364, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5960945369696824364, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1134056831}
   m_SourcePrefab: {fileID: 100100000, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
 --- !u!4 &1134056828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4363198082916841087, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
   m_PrefabInstance: {fileID: 1134056827}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1134056831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106670215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a968450c91d9a78478652a34bc0042c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shrinkAmount: 0.8
+  growAmount: 1
+  duration: 0.8
 --- !u!1001 &1315551374
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -431,16 +470,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform_Jump (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5960945369696824364, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5960945369696824364, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1315551378}
   m_SourcePrefab: {fileID: 100100000, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
 --- !u!4 &1315551375 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4363198082916841087, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
   m_PrefabInstance: {fileID: 1315551374}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1315551378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875465178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a968450c91d9a78478652a34bc0042c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shrinkAmount: 0.8
+  growAmount: 1
+  duration: 0.8
 --- !u!1 &1895418151
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,7 +630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 1
-  jumpSpeed: 3
+  jumpSpeed: 10
 --- !u!58 &1895418157
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -605,6 +666,26 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!1 &1908735728 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5960945369696824364, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
+  m_PrefabInstance: {fileID: 2658748286042545521}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1908735731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908735728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a968450c91d9a78478652a34bc0042c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shrinkAmount: 0.8
+  growAmount: 1
+  duration: 0.8
 --- !u!1 &1996175720
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,6 +776,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &2136952347 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5960945369696824364, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
+  m_PrefabInstance: {fileID: 1007292316}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2136952350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136952347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a968450c91d9a78478652a34bc0042c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shrinkAmount: 0.8
+  growAmount: 1
+  duration: 0.8
 --- !u!1001 &1227562268702348945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -804,10 +905,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform_Jump
       objectReference: {fileID: 0}
+    - target: {fileID: 5960945369696824364, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5960945369696824364, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1908735731}
   m_SourcePrefab: {fileID: 100100000, guid: 50bd95e704020e5439b97679b8ba5aa4, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
