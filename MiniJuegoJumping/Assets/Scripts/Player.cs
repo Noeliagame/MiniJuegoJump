@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
-           
+
     }
 
     // Update is called once per frame
@@ -21,9 +21,9 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey("d") || Input.GetKey("right"))
         {
-            _rigidbody.velocity = new Vector2(runSpeed,_rigidbody.velocity.y);
+            _rigidbody.velocity = new Vector2(runSpeed, _rigidbody.velocity.y);
         }
-        else if(Input.GetKey("a") || Input.GetKey("left"))
+        else if (Input.GetKey("a") || Input.GetKey("left"))
         {
             _rigidbody.velocity = new Vector2(-runSpeed, _rigidbody.velocity.y);
         }

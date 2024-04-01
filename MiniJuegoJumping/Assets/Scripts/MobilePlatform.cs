@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MobilePlatform : MonoBehaviour
-
 {
     public float moveDistance = 0.1f; // Distancia a mover hacia abajo
     public float moveSpeed = 2f; // Velocidad de movimiento
